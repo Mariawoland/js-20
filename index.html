@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+
+    <title>20</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .setting-1 {
+            position: absolute;
+            top: -100px !important;
+            z-index: -1;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            width: 800px;
+            height: 350px;
+            background: linear-gradient(75.49deg, #FC563A 15.31%, #FFE145 88%);
+            border-radius: 0 0 2000px 2000px;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .setting-2 {
+            width: 414px;
+            height: 896px;
+            margin: 50px auto 50px auto;
+            background: #FFFFFF;
+            box-shadow: -3px -4px 28px rgba(103, 103, 103, 0.25), 6px 6px 25px rgba(103, 103, 103, 0.25);
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .setting-3 {
+            width: 100%;
+            margin-top: 15px;
+            transition: all 0.4s ease-in-out;
+        }
+
+        #display-1 {
+            display: block;
+            transition: all 0.4s ease-in-out;
+        }
+
+        #display-2 {
+            display: none;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .dis-2 {
+            display: block !important;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .dis-1 {
+            display: none !important;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .setting-4 {
+            width: 156px !important;
+            height: 156px !important;
+            margin-top: 80px;
+            border-radius: 100%;
+            background: linear-gradient(48.07deg, #FF3333 10.71%, rgba(255, 223, 57, 0.76) 79.03%);
+            position: relative;
+            flex-shrink: 0;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .setting-5 {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            background: #383838;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            transform: scale(0);
+        }
+
+        .setting-6 {
+            font-family: 'Roboto';
+            margin-top: 100px;
+            margin-bottom: 0;
+            font-weight: 550;
+            font-size: 31px;
+            line-height: 36px;
+            color: #000000;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .setting-7 {
+            font-family: 'Roboto';
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #414141;
+            margin-bottom: 0;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .setting-8 {
+            width: 244px;
+            height: 49px !important;
+            flex-shrink: 0;
+            margin-top: 66px;
+            background: #C4C4C4;
+            border-radius: 24.5px;
+            position: relative;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .setting-9 {
+            z-index: 10 !important;
+            position: absolute;
+            right: 40px;
+            top: 12px;
+            font-family: 'Roboto';
+            font-weight: 600;
+            font-size: 23px;
+            line-height: 27px;
+            color: #747474;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .setting-10 {
+            z-index: 10 !important;
+            position: absolute;
+            left: 40px;
+            top: 12px;
+            font-family: 'Roboto';
+            font-weight: 600;
+            font-size: 23px;
+            line-height: 27px;
+            color: black;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .setting-11 {
+            width: 133px;
+            height: 49px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #FFFFFF;
+            box-shadow: 4px 4px 22px rgba(0, 0, 0, 0.25);
+            border-radius: 24.5px;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .setting-12 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-top: 250px;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .setting-13 {
+            font-family: 'Roboto';
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 23px;
+            color: #000000;
+            margin-left: 46px;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .setting-14 {
+            width: 46px;
+            border-radius: 100%;
+            height: 43px;
+            margin-right: 38px;
+            background: #FFFFFF;
+            box-shadow: -2px -2px 4px rgba(103, 103, 103, 0.25), 2px 2px 4px rgba(100, 100, 100, 0.25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .setting-999 {
+            background: #383838;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .setting-000 .setting-1 {
+            background: linear-gradient(75.49deg, #6732FE 15.31%, #F043EE 88%);
+            transition: all 0.4s ease-in-out;
+        }
+
+        .setting-000 .setting-2 {
+            background: #383838;
+            box-shadow: -3px -4px 28px rgba(103, 103, 103, 0.25), 6px 6px 25px rgba(103, 103, 103, 0.25);
+            border-radius: 15px;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .setting-000 .setting-2 .setting-4 {
+            background: linear-gradient(48.07deg, #6732FE 10.71%, #F344EE 79.03%);
+            transition: all 0.4s ease-in-out;
+        }
+
+        .setting-000 .setting-2 .setting-4 .setting-5 {
+            transform: scale(1);
+        }
+
+        .setting-000 .setting-2 .setting-6,
+        .setting-000 .setting-2 .setting-7 {
+            color: white;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .setting-000 .setting-2 .setting-8 .setting-9 {
+            color: #BDBDBD;
+            transition: all 0.4s ease-in-out;
+
+        }
+
+        .setting-000 .setting-2 .setting-8 .setting-11 {
+            left: 111px;
+            background: #555252;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .setting-000 .setting-2 .setting-12 .setting-13 {
+            color: white;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .setting-000 .setting-2 .setting-12 .setting-14 {
+            background: #4D4D4D;
+            box-shadow: -2px -2px 4px rgba(244, 244, 244, 0.25), 2px 2px 4px rgba(255, 255, 255, 0.25);
+            transition: all 0.4s ease-in-out;
+        }
+
+
+        @media (max-width: 800px) {
+            .setting-1 {
+                display: none;
+            }
+        }
+
+        @media (max-width: 425px) {
+            .setting-2 {
+                width: 100%;
+                border-radius: 0;
+                margin: 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="setting-0">
+
+        <div class="setting-1"></div>
+
+        <div class="setting-2">
+
+            <div id="display-1">
+                <svg width="375" class="setting-3" height="20" viewBox="0 0 375 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_129)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V20H375V0H0Z" fill="black"
+                            fill-opacity="0.01" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M365.998 5.5H346.502C345.673 5.5 345 6.16802 345 7.00006V13.4999C345 14.3284 345.673 15 346.502 15H365.998C366.827 15 367.5 14.332 367.5 13.4999V7.00006C367.5 6.1716 366.827 5.5 365.998 5.5ZM345.5 7.00006C345.5 6.44576 345.947 6 346.502 6H365.998C366.551 6 367 6.4482 367 7.00006V13.4999C367 14.0542 366.553 14.5 365.998 14.5H346.502C345.949 14.5 345.5 14.0518 345.5 13.4999V7.00006Z"
+                            fill="black" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M346.5 6.5C346.224 6.5 346 6.72386 346 7V13.5C346 13.7761 346.224 14 346.5 14H355V6.5H346.5Z"
+                            fill="black" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M369.5 10.25C369.5 11.1406 368.848 11.8775 368 12V8.5C368.848 8.62255 369.5 9.35936 369.5 10.25Z"
+                            fill="black" />
+                        <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd"
+                            d="M313.69 14.8516V11.2991L315.503 13.1606L313.69 14.8516ZM315.586 7.84041L313.69 9.63882V6.23165L315.586 7.84041ZM314.145 10.5005L316.959 7.84041L312.761 4H312.661V9.34133L309.811 6.52481L309 7.32389L312.429 10.5005L309 13.6766L309.811 14.4757L312.661 11.6591V17H312.843L317 13.15L314.145 10.5005Z"
+                            fill="black" />
+                        <path
+                            d="M167.756 14.2051C169.871 14.2051 171.107 12.5234 171.107 9.6582C171.107 8.63281 170.932 7.76562 170.586 7.08594C170.041 5.94922 169.057 5.33984 167.809 5.33984C166.016 5.33984 164.744 6.56445 164.744 8.29297C164.744 9.92188 165.916 11.1113 167.527 11.1113C168.529 11.1113 169.338 10.6426 169.742 9.82812H169.766C169.766 9.82812 169.789 9.82812 169.795 9.82812C169.801 9.82812 169.842 9.82812 169.842 9.82812C169.818 11.8672 169.062 13.0391 167.768 13.0391C166.994 13.0391 166.396 12.6172 166.191 11.9258H164.867C165.125 13.3086 166.256 14.2051 167.756 14.2051ZM167.814 9.99805C166.777 9.99805 166.051 9.27148 166.051 8.24609C166.051 7.25586 166.818 6.49414 167.826 6.49414C168.828 6.49414 169.596 7.26172 169.596 8.27539C169.596 9.27148 168.846 9.99805 167.814 9.99805ZM172.859 12.2305C172.859 12.7754 173.229 13.1562 173.779 13.1562C174.324 13.1562 174.688 12.7754 174.688 12.2305C174.688 11.6855 174.324 11.3047 173.779 11.3047C173.229 11.3047 172.859 11.6855 172.859 12.2305ZM172.859 7.76562C172.859 8.31055 173.229 8.69141 173.779 8.69141C174.324 8.69141 174.688 8.31055 174.688 7.76562C174.688 7.2207 174.324 6.83984 173.779 6.83984C173.229 6.83984 172.859 7.2207 172.859 7.76562ZM180.523 14H181.789V12.3652H182.955V11.1934H181.789V5.54492H179.92C178.414 7.80078 177.154 9.76367 176.398 11.1465V12.3652H180.523V14ZM177.658 11.1406C178.654 9.41211 179.627 7.91211 180.465 6.69922H180.541V11.2227H177.658V11.1406ZM186.453 14H187.766V5.54492H186.459L184.232 7.11523V8.45703L186.354 6.95703H186.453V14ZM199.127 14H200.521L197.469 5.54492H196.057L193.004 14H194.352L195.131 11.7559H198.354L199.127 14ZM196.695 7.08008H196.795L198.02 10.6543H195.465L196.695 7.08008ZM203.217 14V7.89453H203.299L205.777 13.7539H206.773L209.252 7.89453H209.334V14H210.553V5.54492H209.018L206.322 11.9668H206.223L203.533 5.54492H201.998V14H203.217Z"
+                            fill="black" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M330.996 7.52088C332.936 7.52088 334.703 8.23545 336.059 9.40718L337 8.36811C335.395 6.97447 333.298 6 330.996 6C328.697 6 326.603 6.97151 325 8.36071L325.939 9.40126C327.294 8.23299 329.058 7.52088 330.996 7.52088ZM330.996 10.5202C332.158 10.5202 333.22 10.9424 334.04 11.6377L335.035 10.538C333.952 9.60789 332.542 9.00033 330.996 9.00033C329.452 9.00033 328.044 9.60641 326.961 10.5335L327.955 11.6347C328.774 10.9409 329.835 10.5202 330.996 10.5202ZM333.043 12.7374C332.489 12.2773 331.775 11.9587 330.995 11.9587C330.217 11.9587 329.504 12.2768 328.95 12.735L330.995 15L333.043 12.7374Z"
+                            fill="black" />
+                        <path
+                            d="M52.1738 10.7305V9.69922H48.7461V10.625H51.125V10.8301C51.125 12.2598 50.0996 13.2266 48.5879 13.2266C46.8887 13.2266 45.834 11.9023 45.834 9.76953C45.834 7.66602 46.9062 6.31836 48.582 6.31836C49.8359 6.31836 50.6855 6.92188 51.0488 8.06445H52.1211C51.8164 6.38867 50.457 5.3457 48.582 5.3457C46.2676 5.3457 44.75 7.09766 44.75 9.76953C44.75 12.4766 46.2441 14.1992 48.582 14.1992C50.7441 14.1992 52.1738 12.8164 52.1738 10.7305ZM53.6387 11.791C53.75 13.25 54.9863 14.1992 56.7793 14.1992C58.7129 14.1992 59.9375 13.209 59.9375 11.6562C59.9375 10.4141 59.2344 9.73438 57.4824 9.29492L56.5977 9.06055C55.4316 8.76172 54.9688 8.38086 54.9688 7.71875C54.9688 6.86328 55.7129 6.30078 56.8379 6.30078C57.8926 6.30078 58.6074 6.81641 58.7539 7.68359H59.8145C59.7266 6.31836 58.5078 5.3457 56.873 5.3457C55.0859 5.3457 53.8848 6.31836 53.8848 7.75391C53.8848 8.95508 54.5469 9.64648 56.0762 10.0332L57.1602 10.3145C58.3262 10.6074 58.8535 11.0645 58.8535 11.7852C58.8535 12.623 58.0156 13.2383 56.8789 13.2383C55.6777 13.2383 54.834 12.6758 54.7051 11.791H53.6387Z"
+                            fill="black" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M35 10.75C35 12.2688 36.2312 13.5 37.75 13.5C39.2688 13.5 40.5 12.2688 40.5 10.75C40.5 9.23122 39.2688 8 37.75 8C36.2312 8 35 9.23122 35 10.75ZM40 10.75C40 11.9926 38.9926 13 37.75 13C36.5074 13 35.5 11.9926 35.5 10.75C35.5 9.50736 36.5074 8.5 37.75 8.5C38.9926 8.5 40 9.50736 40 10.75Z"
+                            fill="black" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M28 10.75C28 12.2688 29.2312 13.5 30.75 13.5C32.2688 13.5 33.5 12.2688 33.5 10.75C33.5 9.23122 32.2688 8 30.75 8C29.2312 8 28 9.23122 28 10.75ZM33 10.75C33 11.9926 31.9926 13 30.75 13C29.5074 13 28.5 11.9926 28.5 10.75C28.5 9.50736 29.5074 8.5 30.75 8.5C31.9926 8.5 33 9.50736 33 10.75Z"
+                            fill="black" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M23.75 13.5C25.2688 13.5 26.5 12.2688 26.5 10.75C26.5 9.23122 25.2688 8 23.75 8C22.2312 8 21 9.23122 21 10.75C21 12.2688 22.2312 13.5 23.75 13.5Z"
+                            fill="black" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.75 13.5C18.2688 13.5 19.5 12.2688 19.5 10.75C19.5 9.23122 18.2688 8 16.75 8C15.2312 8 14 9.23122 14 10.75C14 12.2688 15.2312 13.5 16.75 13.5Z"
+                            fill="black" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.75 13.5C11.2688 13.5 12.5 12.2688 12.5 10.75C12.5 9.23122 11.2688 8 9.75 8C8.23122 8 7 9.23122 7 10.75C7 12.2688 8.23122 13.5 9.75 13.5Z"
+                            fill="black" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1_129">
+                            <rect width="375" height="20" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+            </div>
+
+            <div id="display-2">
+                <svg width="375" height="20" class="setting-3" viewBox="0 0 375 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_14_76)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V20H375V0H0Z" fill="black"
+                            fill-opacity="0.01" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M365.998 5.5H346.502C345.673 5.5 345 6.16802 345 7.00006V13.4999C345 14.3284 345.673 15 346.502 15H365.998C366.827 15 367.5 14.332 367.5 13.4999V7.00006C367.5 6.1716 366.827 5.5 365.998 5.5ZM345.5 7.00006C345.5 6.44576 345.947 6 346.502 6H365.998C366.551 6 367 6.4482 367 7.00006V13.4999C367 14.0542 366.553 14.5 365.998 14.5H346.502C345.949 14.5 345.5 14.0518 345.5 13.4999V7.00006Z"
+                            fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M346.5 6.5C346.224 6.5 346 6.72386 346 7V13.5C346 13.7761 346.224 14 346.5 14H355V6.5H346.5Z"
+                            fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M369.5 10.25C369.5 11.1406 368.848 11.8775 368 12V8.5C368.848 8.62255 369.5 9.35936 369.5 10.25Z"
+                            fill="white" />
+                        <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd"
+                            d="M313.69 14.8516V11.2991L315.503 13.1606L313.69 14.8516ZM315.586 7.84041L313.69 9.63882V6.23165L315.586 7.84041ZM314.145 10.5005L316.959 7.84041L312.761 4H312.661V9.34133L309.811 6.52481L309 7.32389L312.429 10.5005L309 13.6766L309.811 14.4757L312.661 11.6591V17H312.843L317 13.15L314.145 10.5005Z"
+                            fill="white" />
+                        <path
+                            d="M167.756 14.2051C169.871 14.2051 171.107 12.5234 171.107 9.6582C171.107 8.63281 170.932 7.76562 170.586 7.08594C170.041 5.94922 169.057 5.33984 167.809 5.33984C166.016 5.33984 164.744 6.56445 164.744 8.29297C164.744 9.92188 165.916 11.1113 167.527 11.1113C168.529 11.1113 169.338 10.6426 169.742 9.82812H169.766C169.766 9.82812 169.789 9.82812 169.795 9.82812C169.801 9.82812 169.842 9.82812 169.842 9.82812C169.818 11.8672 169.062 13.0391 167.768 13.0391C166.994 13.0391 166.396 12.6172 166.191 11.9258H164.867C165.125 13.3086 166.256 14.2051 167.756 14.2051ZM167.814 9.99805C166.777 9.99805 166.051 9.27148 166.051 8.24609C166.051 7.25586 166.818 6.49414 167.826 6.49414C168.828 6.49414 169.596 7.26172 169.596 8.27539C169.596 9.27148 168.846 9.99805 167.814 9.99805ZM172.859 12.2305C172.859 12.7754 173.229 13.1562 173.779 13.1562C174.324 13.1562 174.688 12.7754 174.688 12.2305C174.688 11.6855 174.324 11.3047 173.779 11.3047C173.229 11.3047 172.859 11.6855 172.859 12.2305ZM172.859 7.76562C172.859 8.31055 173.229 8.69141 173.779 8.69141C174.324 8.69141 174.688 8.31055 174.688 7.76562C174.688 7.2207 174.324 6.83984 173.779 6.83984C173.229 6.83984 172.859 7.2207 172.859 7.76562ZM180.523 14H181.789V12.3652H182.955V11.1934H181.789V5.54492H179.92C178.414 7.80078 177.154 9.76367 176.398 11.1465V12.3652H180.523V14ZM177.658 11.1406C178.654 9.41211 179.627 7.91211 180.465 6.69922H180.541V11.2227H177.658V11.1406ZM186.453 14H187.766V5.54492H186.459L184.232 7.11523V8.45703L186.354 6.95703H186.453V14ZM199.127 14H200.521L197.469 5.54492H196.057L193.004 14H194.352L195.131 11.7559H198.354L199.127 14ZM196.695 7.08008H196.795L198.02 10.6543H195.465L196.695 7.08008ZM203.217 14V7.89453H203.299L205.777 13.7539H206.773L209.252 7.89453H209.334V14H210.553V5.54492H209.018L206.322 11.9668H206.223L203.533 5.54492H201.998V14H203.217Z"
+                            fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M330.996 7.52088C332.936 7.52088 334.703 8.23545 336.059 9.40718L337 8.36811C335.395 6.97447 333.298 6 330.996 6C328.697 6 326.603 6.97151 325 8.36071L325.939 9.40126C327.294 8.23299 329.058 7.52088 330.996 7.52088ZM330.996 10.5202C332.158 10.5202 333.22 10.9424 334.04 11.6377L335.035 10.538C333.952 9.60789 332.542 9.00033 330.996 9.00033C329.452 9.00033 328.044 9.60641 326.961 10.5335L327.955 11.6347C328.774 10.9409 329.835 10.5202 330.996 10.5202ZM333.043 12.7374C332.489 12.2773 331.775 11.9587 330.995 11.9587C330.217 11.9587 329.504 12.2768 328.95 12.735L330.995 15L333.043 12.7374Z"
+                            fill="white" />
+                        <path
+                            d="M52.1738 10.7305V9.69922H48.7461V10.625H51.125V10.8301C51.125 12.2598 50.0996 13.2266 48.5879 13.2266C46.8887 13.2266 45.834 11.9023 45.834 9.76953C45.834 7.66602 46.9062 6.31836 48.582 6.31836C49.8359 6.31836 50.6855 6.92188 51.0488 8.06445H52.1211C51.8164 6.38867 50.457 5.3457 48.582 5.3457C46.2676 5.3457 44.75 7.09766 44.75 9.76953C44.75 12.4766 46.2441 14.1992 48.582 14.1992C50.7441 14.1992 52.1738 12.8164 52.1738 10.7305ZM53.6387 11.791C53.75 13.25 54.9863 14.1992 56.7793 14.1992C58.7129 14.1992 59.9375 13.209 59.9375 11.6562C59.9375 10.4141 59.2344 9.73438 57.4824 9.29492L56.5977 9.06055C55.4316 8.76172 54.9688 8.38086 54.9688 7.71875C54.9688 6.86328 55.7129 6.30078 56.8379 6.30078C57.8926 6.30078 58.6074 6.81641 58.7539 7.68359H59.8145C59.7266 6.31836 58.5078 5.3457 56.873 5.3457C55.0859 5.3457 53.8848 6.31836 53.8848 7.75391C53.8848 8.95508 54.5469 9.64648 56.0762 10.0332L57.1602 10.3145C58.3262 10.6074 58.8535 11.0645 58.8535 11.7852C58.8535 12.623 58.0156 13.2383 56.8789 13.2383C55.6777 13.2383 54.834 12.6758 54.7051 11.791H53.6387Z"
+                            fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M35 10.75C35 12.2688 36.2312 13.5 37.75 13.5C39.2688 13.5 40.5 12.2688 40.5 10.75C40.5 9.23122 39.2688 8 37.75 8C36.2312 8 35 9.23122 35 10.75ZM40 10.75C40 11.9926 38.9926 13 37.75 13C36.5074 13 35.5 11.9926 35.5 10.75C35.5 9.50736 36.5074 8.5 37.75 8.5C38.9926 8.5 40 9.50736 40 10.75Z"
+                            fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M28 10.75C28 12.2688 29.2312 13.5 30.75 13.5C32.2688 13.5 33.5 12.2688 33.5 10.75C33.5 9.23122 32.2688 8 30.75 8C29.2312 8 28 9.23122 28 10.75ZM33 10.75C33 11.9926 31.9926 13 30.75 13C29.5074 13 28.5 11.9926 28.5 10.75C28.5 9.50736 29.5074 8.5 30.75 8.5C31.9926 8.5 33 9.50736 33 10.75Z"
+                            fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M23.75 13.5C25.2688 13.5 26.5 12.2688 26.5 10.75C26.5 9.23122 25.2688 8 23.75 8C22.2312 8 21 9.23122 21 10.75C21 12.2688 22.2312 13.5 23.75 13.5Z"
+                            fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.75 13.5C18.2688 13.5 19.5 12.2688 19.5 10.75C19.5 9.23122 18.2688 8 16.75 8C15.2312 8 14 9.23122 14 10.75C14 12.2688 15.2312 13.5 16.75 13.5Z"
+                            fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.75 13.5C11.2688 13.5 12.5 12.2688 12.5 10.75C12.5 9.23122 11.2688 8 9.75 8C8.23122 8 7 9.23122 7 10.75C7 12.2688 8.23122 13.5 9.75 13.5Z"
+                            fill="white" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_14_76">
+                            <rect width="375" height="20" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+            </div>
+
+            <div class="setting-4">
+                <div class="setting-5"></div>
+            </div>
+
+            <p class="setting-6">Choose a Style</p>
+
+            <p class="setting-7">Customize your interface </br> Day or Night</p>
+
+            <div class="setting-8" onclick="shecvla(), shemowmeba()">
+
+                <span class="setting-9">Dark</span>
+
+                <span class="setting-10">Light</span>
+
+                <div class="setting-11"></div>
+
+            </div>
+
+            <div class="setting-12">
+                <span class="setting-13">Skip</span>
+
+                <div class="setting-14">
+
+                    <div>
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 8L17 8" stroke="#8B8989" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M10 1L17 8L10 15" stroke="#8B8989" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div>
+                <svg width="130" height="6" viewBox="0 0 130 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="130" height="6" rx="3" fill="#6D6D6D" />
+                </svg>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+
+        function shecvla() {
+
+            var tani = document.body;
+            tani.classList.toggle("setting-999");
+
+            var setingi = document.getElementById("setting-0");
+            setingi.classList.toggle("setting-000");
+
+        }
+
+        function shemowmeba() {
+
+            var disp1 = document.getElementById("display-1");
+            var disp2 = document.getElementById("display-2");
+
+            disp1.classList.toggle("dis-1");
+            disp2.classList.toggle("dis-2");
+
+        }
+
+    </script>
+
+</body>
+
+</html>
